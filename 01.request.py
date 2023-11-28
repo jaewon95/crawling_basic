@@ -35,5 +35,16 @@ for index,item in enumerate(titleItem) :
 
 
 
+# 3개는 모두 같은 코드이다.
+print(soup.h1)
+h1 = soup.find('h1')
+h1 = soup.select_one('h1')
+
+# find
+h2 = soup.find(class_='클래스명') # class는 _ 를 사용함
+h2 = soup.find(id='클래스명') # id는 그대로 진행
+
+nav = soup.find(class_="nav", string='증권') # 클래스가 nav , string 증권
+nav = soup.find('h1', string='증권') # 클래스가 nav , string 증권
 
 
