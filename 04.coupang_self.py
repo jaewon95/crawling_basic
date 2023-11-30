@@ -22,7 +22,7 @@ search_url = b_url + keyword
 
 #쿠팡은 cookie를 요구한다
 
-
+ 
 
 # timeout : 지연시간 설정
 req = requests.get(search_url,timeout=5, headers=headers, cookies=cookie)
